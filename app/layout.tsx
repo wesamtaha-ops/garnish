@@ -38,12 +38,20 @@ export const metadata: Metadata = {
     locale: 'en_US',
     alternateLocale: 'ar_SY',
     siteName: 'GARNISH F&B Consulting',
+    url: 'https://www.garnish.com',
     images: [
       {
-        url: '/logo.png',
+        url: 'https://www.garnish.com/og-image.png', // Create this 1200x630px image for best results
         width: 1200,
         height: 630,
-        alt: 'GARNISH F&B Consulting Logo',
+        alt: 'GARNISH F&B Consulting - Management, Operations & F&B Specialists since 2002',
+        type: 'image/png',
+      },
+      {
+        url: 'https://www.garnish.com/logo.png', // Fallback
+        width: 800,
+        height: 800,
+        alt: 'GARNISH Logo',
       },
     ],
   },
@@ -51,7 +59,9 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'GARNISH - F&B Consulting Experts',
     description: 'Professional F&B consulting and restaurant management services in Syria since 2002',
-    images: ['/logo.png'],
+    images: ['https://www.garnish.com/og-image.png'],
+    creator: '@garnish',
+    site: '@garnish',
   },
   alternates: {
     canonical: 'https://www.garnish.com',
@@ -72,6 +82,11 @@ export default function RootLayout({
   return (
     <html lang="en" dir="ltr">
       <head>
+        {/* Favicon */}
+        <link rel="icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+        
+        {/* Font Preloading */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link 
@@ -83,6 +98,13 @@ export default function RootLayout({
           rel="stylesheet" 
           href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap"
         />
+        
+        {/* Additional Meta Tags for Better Social Sharing */}
+        <meta property="og:image:secure_url" content="https://www.garnish.com/og-image.png" />
+        <meta property="og:image:type" content="image/png" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta name="theme-color" content="#265a3f" />
         <style dangerouslySetInnerHTML={{
           __html: `
             @font-face {
