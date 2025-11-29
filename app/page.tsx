@@ -7,7 +7,7 @@ import ContactSection from './components/ContactSection'
 
 export const metadata: Metadata = {
   title: 'GARNISH - F&B Consulting Damascus | Restaurant Management Experts Syria',
-  description: 'Transform your F&B business with GARNISH. Expert consulting in restaurant management, operations, and concept development. Serving Syria and the Middle East since 2002.',
+  description: 'Transform your F&B business with GARNISH. Expert consulting in restaurant management, operations, and concept development. Serving Syria and the Middle East since 2015.',
   openGraph: {
     title: 'GARNISH - Leading F&B Consulting in Damascus, Syria',
     description: 'Professional F&B consulting services including restaurant management, operations optimization, and hospitality solutions.',

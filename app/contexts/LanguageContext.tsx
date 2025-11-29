@@ -25,14 +25,14 @@ const translations = {
     // Hero Section
     'hero.title': 'GARNISH',
     'hero.tagline': 'Management • Operations • F&B Specialists',
-    'hero.subtitle': 'Professional hospitality and F&B consulting services since 2002',
+    'hero.subtitle': 'Professional hospitality and F&B consulting services since 2015',
     'hero.cta': 'Learn More',
     'hero.contact': 'Contact Us',
     
     // Our Story
     'story.title': 'Our Story',
-    'story.subtitle': 'A Journey Since 2002',
-    'story.content': 'The founder began his journey by studying and working in tourism and hospitality since 2002, making his mark in various restaurants and hotels. Through extensive experience in the labor market, we discovered the urgent need for qualified professionals capable of advancing this field locally and regionally.',
+    'story.subtitle': 'A Journey Since 2015',
+    'story.content': 'The founder began his journey by studying and working in tourism and hospitality since 2015, making his mark in various restaurants and hotels. Through extensive experience in the labor market, we discovered the urgent need for qualified professionals capable of advancing this field locally and regionally.',
     'story.content2': 'A year ago, we decided to expand and transform GARNISH into an integrated group of experienced youth. We provide services professionally and legally, saving customers money, time, and effort through one credible entity that turns requirements into reality.',
     'story.milestone1Title': 'Journey Begins',
     'story.milestone1Desc': 'Started studying and working in tourism and hospitality industry',
@@ -40,10 +40,10 @@ const translations = {
     'story.milestone2Desc': 'Transformed GARNISH into an integrated group of experienced youth',
     'story.milestone3Title': 'Professional Services',
     'story.milestone3Desc': 'Providing comprehensive F&B consulting services professionally and legally',
-    'story.journeyOfExcellence': 'Journey of Excellence Since 2002',
+    'story.journeyOfExcellence': 'Journey of Excellence Since 2015',
     'story.years': 'Years',
     'story.yearsExperience': 'Years Experience',
-    'story.since2002': 'Since 2002',
+    'story.since2015': 'Since 2015',
     'story.excellenceInService': 'Excellence in Service',
     
     // Who We Are
@@ -136,7 +136,7 @@ const translations = {
     'whyUs.solution4': 'Commitment to privacy and high professionalism for perfect project completion',
     'whyUs.investmentTitle': 'Investment in Time & Effort',
     'whyUs.investmentDesc': 'The importance and need for "Garnish" stems from our investment in time and effort, achieving effective synchronization in all project aspects through our diverse expertise and efficiency.',
-    'whyUs.yearsExperience': '22+ Years Experience',
+    'whyUs.yearsExperience': '10+ Years Experience',
     'whyUs.integratedSolutions': 'Integrated Solutions',
     'whyUs.highProfessionalism': 'High Professionalism',
     'whyUs.saveTimeMoney': 'Save Time & Money',
@@ -156,7 +156,7 @@ const translations = {
     'contact.email': 'Email Address',
     'contact.emailPlaceholder': 'your@email.com',
     'contact.phone': 'Phone Number',
-    'contact.phonePlaceholder': '+963 11 123 4567',
+    'contact.phonePlaceholder': '0945989890',
     'contact.company': 'Company Name',
     'contact.companyPlaceholder': 'Your company name',
     'contact.message': 'Message',
@@ -274,14 +274,14 @@ const translations = {
     // Hero Section
     'hero.title': 'GARNISH',
     'hero.tagline': 'إدارة • عمليات • متخصصون في الأغذية والمشروبات',
-    'hero.subtitle': 'خدمات استشارية مهنية في الضيافة والأغذية والمشروبات منذ 2002',
+    'hero.subtitle': 'خدمات استشارية مهنية في الضيافة والأغذية والمشروبات منذ 2015',
     'hero.cta': 'اعرف المزيد',
     'hero.contact': 'اتصل بنا',
     
     // Our Story
     'story.title': 'قصتنا',
-    'story.subtitle': 'رحلة منذ 2002',
-    'story.content': 'بدأ مؤسس المجموعة رحلته بدراسة والعمل في السياحة والضيافة منذ عام 2002، حيث عمل في مختلف المطاعم والفنادق وضع بصمته في هذا المجال.',
+    'story.subtitle': 'رحلة منذ 2015',
+    'story.content': 'بدأ مؤسس المجموعة رحلته بدراسة والعمل في السياحة والضيافة منذ عام 2015، حيث عمل في مختلف المطاعم والفنادق وضع بصمته في هذا المجال.',
     'story.content2': 'منذ عام مضى، تم أخذ القرار بتوسيع الفريق وجعل GARNISH مجموعة متكاملة من الشباب ذوي الخبرة الواسعة في شتى المجالات.',
     'story.milestone1Title': 'بداية الرحلة',
     'story.milestone1Desc': 'بدأنا بالدراسة والعمل في صناعة السياحة والضيافة',
@@ -289,10 +289,10 @@ const translations = {
     'story.milestone2Desc': 'تحويل GARNISH إلى مجموعة متكاملة من الشباب ذوي الخبرة',
     'story.milestone3Title': 'الخدمات الاحترافية',
     'story.milestone3Desc': 'تقديم خدمات استشارية شاملة بشكل احترافي وقانوني',
-    'story.journeyOfExcellence': 'رحلة التميز منذ 2002',
+    'story.journeyOfExcellence': 'رحلة التميز منذ 2015',
     'story.years': 'سنة',
     'story.yearsExperience': 'سنة خبرة',
-    'story.since2002': 'منذ 2002',
+    'story.since2015': 'منذ 2015',
     'story.excellenceInService': 'التميز في الخدمة',
     
     // Who We Are
@@ -385,7 +385,7 @@ const translations = {
     'whyUs.solution4': 'التزام بالخصوصية والمهنية العالية لإتمام المشاريع على أكمل وجه',
     'whyUs.investmentTitle': 'استثمار في الوقت والجهد',
     'whyUs.investmentDesc': 'من هنا تنبع أهمية وحاجة "Garnish" حيث نمثل استثماراً في الوقت والجهد، ونحقق تزامناً فعالاً في جميع أواصر المشروع بسبب تعدد خبراتنا وكفاءتها.',
-    'whyUs.yearsExperience': '22+ سنة خبرة',
+    'whyUs.yearsExperience': '10+ سنة خبرة',
     'whyUs.integratedSolutions': 'حلول متكاملة',
     'whyUs.highProfessionalism': 'مهنية عالية',
     'whyUs.saveTimeMoney': 'توفير الوقت والمال',

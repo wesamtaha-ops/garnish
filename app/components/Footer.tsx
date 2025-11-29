@@ -84,12 +84,8 @@ export default function Footer() {
             {/* Contact Info */}
             <div className="space-y-3">
               <div className={`flex items-center ${isRTL ? 'space-x-reverse space-x-3' : 'space-x-3'}`}>
-                <Mail className="w-5 h-5 text-green-200" />
-                <span className="text-green-100">info@garnish.com</span>
-              </div>
-              <div className={`flex items-center ${isRTL ? 'space-x-reverse space-x-3' : 'space-x-3'}`}>
                 <Phone className="w-5 h-5 text-green-200" />
-                <span className="text-green-100">+963 11 123 4567</span>
+                <span className="text-green-100">0945989890</span>
               </div>
               <div className={`flex items-start ${isRTL ? 'space-x-reverse space-x-3' : 'space-x-3'}`}>
                 <MapPin className="w-5 h-5 text-green-200 mt-1" />

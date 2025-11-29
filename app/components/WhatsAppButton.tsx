@@ -10,7 +10,7 @@ export default function WhatsAppButton() {
   const [isExpanded, setIsExpanded] = useState(false)
   
   // Phone number (Syria)
-  const phoneNumber = '963933123456' // Replace with your actual WhatsApp number
+  const phoneNumber = '963945989890' // WhatsApp number
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(t('whatsapp.defaultMessage'))}`
 
   useEffect(() => {

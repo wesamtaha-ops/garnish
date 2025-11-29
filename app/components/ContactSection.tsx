@@ -64,7 +64,7 @@ export default function ContactSection() {
           phone: formData.phone,
           company: formData.company,
           message: formData.message,
-          to_email: 'info@garnish.com',
+          to_email: '',
           language: language,
         },
         PUBLIC_KEY
@@ -101,16 +101,10 @@ export default function ContactSection() {
 
   const contactInfo = [
     {
-      icon: Mail,
-      title: t('contact.emailUs'),
-      details: ['info@garnish.com', 'support@garnish.com'],
-      action: 'mailto:info@garnish.com'
-    },
-    {
       icon: Phone,
       title: t('contact.callUs'),
-      details: ['+963 11 123 4567', '+963 933 123 456'],
-      action: 'tel:+963111234567'
+      details: ['0945989890'],
+      action: 'tel:0945989890'
     },
     {
       icon: MapPin,

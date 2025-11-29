@@ -28,13 +28,13 @@ export default function WhoWeAreSection() {
 
   const teamStats = [
     {
-      number: '15+',
+      number: '10+',
       label: t('whoWeAre.experience'),
       icon: Trophy,
       description: 'Combined team experience in hospitality industry'
     },
     {
-      number: '200+',
+      number: '18',
       label: t('whoWeAre.projects'),
       icon: TrendingUp,
       description: 'Successfully completed projects across the region'

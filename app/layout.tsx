@@ -16,7 +16,7 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   title: 'GARNISH - Professional F&B Consulting | Restaurant Management Syria',
-  description: 'Leading F&B consulting firm in Syria since 2002. Expert restaurant management, operations consulting, and hospitality solutions. Transform your F&B business with 22+ years of experience.',
+  description: 'Leading F&B consulting firm in Syria since 2015. Expert restaurant management, operations consulting, and hospitality solutions. Transform your F&B business with 10+ years of experience.',
   keywords: 'F&B consulting Syria, restaurant management Damascus, hospitality consulting Syria, food and beverage operations, restaurant consulting services, hotel F&B management, cloud kitchen consulting, concept development Syria, GARNISH consulting Damascus',
   authors: [{ name: 'GARNISH F&B Consulting' }],
   viewport: 'width=device-width, initial-scale=1, maximum-scale=5',
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'GARNISH - Professional F&B Consulting & Restaurant Management',
-    description: 'Leading F&B consulting firm in Syria. Expert restaurant management, operations optimization, and hospitality solutions since 2002.',
+    description: 'Leading F&B consulting firm in Syria. Expert restaurant management, operations optimization, and hospitality solutions since 2015.',
     type: 'website',
     locale: 'en_US',
     alternateLocale: 'ar_SY',
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
         url: 'https://www.garnish.com/og-image.png', // Create this 1200x630px image for best results
         width: 1200,
         height: 630,
-        alt: 'GARNISH F&B Consulting - Management, Operations & F&B Specialists since 2002',
+        alt: 'GARNISH F&B Consulting - Management, Operations & F&B Specialists since 2015',
         type: 'image/png',
       },
       {
@@ -58,7 +58,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'GARNISH - F&B Consulting Experts',
-    description: 'Professional F&B consulting and restaurant management services in Syria since 2002',
+    description: 'Professional F&B consulting and restaurant management services in Syria since 2015',
     images: ['https://www.garnish.com/og-image.png'],
     creator: '@garnish',
     site: '@garnish',
@@ -139,8 +139,7 @@ export default function RootLayout({
               url: 'https://www.garnish.com',
               logo: 'https://www.garnish.com/logo.png',
               image: 'https://www.garnish.com/heroLogo.png',
-              telephone: '+963-11-123-4567',
-              email: 'info@garnish.com',
+              telephone: '0945989890',
               address: {
                 '@type': 'PostalAddress',
                 streetAddress: 'Damascus',
@@ -154,7 +153,7 @@ export default function RootLayout({
                 longitude: '36.2765',
               },
               areaServed: ['Syria', 'Middle East', 'Levant'],
-              foundingDate: '2002',
+              foundingDate: '2015',
               sameAs: [
                 'https://www.facebook.com/garnish',
                 'https://www.twitter.com/garnish',

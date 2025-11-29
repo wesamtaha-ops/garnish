@@ -77,14 +77,14 @@ export default function WhyUsSection() {
   const advantages = [
     {
       title: 'Proven Track Record',
-      description: '200+ successful projects across the hospitality industry',
+      description: '18 successful projects across the hospitality industry',
       stat: '98%',
       statLabel: 'Success Rate'
     },
     {
       title: 'Industry Expertise',
-      description: '15+ years of combined experience in F&B and hospitality',
-      stat: '15+',
+      description: '10+ years of combined experience in F&B and hospitality',
+      stat: '10+',
       statLabel: 'Years Experience'
     },
     {
