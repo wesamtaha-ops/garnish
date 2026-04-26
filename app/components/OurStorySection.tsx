@@ -158,12 +158,6 @@ export default function OurStorySection() {
                 />
                 */}
               </div>
-              <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-gradient-to-br from-primary-500 to-primary-600 rounded-2xl flex items-center justify-center shadow-xl">
-                <div className="text-center text-white">
-                  <div className="text-2xl font-bold">10+</div>
-                  <div className="text-xs uppercase tracking-wider">{t('story.years')}</div>
-                </div>
-              </div>
             </div>
           </div>
         </div>
@@ -225,27 +219,6 @@ export default function OurStorySection() {
                             </div>
                           )}
 
-                          {/* Key Stats */}
-                          <div className="grid grid-cols-3 gap-6 mt-12">
-                            <div className="text-center">
-                              <div className="text-3xl font-bold text-green-200 mb-2">10+</div>
-                              <div className="text-green-100 text-sm uppercase tracking-wider">
-{t('story.yearsExperience')}
-                              </div>
-                            </div>
-                            <div className="text-center">
-                              <div className="text-3xl font-bold text-green-200 mb-2">8+</div>
-                              <div className="text-green-100 text-sm uppercase tracking-wider">
-                                {language === 'ar' ? 'مجالات' : 'Sectors'}
-                              </div>
-                            </div>
-                            <div className="text-center">
-                              <div className="text-3xl font-bold text-green-200 mb-2">18</div>
-                              <div className="text-green-100 text-sm uppercase tracking-wider">
-                                {language === 'ar' ? 'مشروع' : 'Projects'}
-                              </div>
-                            </div>
-                          </div>
                 </div>
 
                 {/* Visual Side */}

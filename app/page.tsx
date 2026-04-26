@@ -1,5 +1,7 @@
 import { Metadata } from 'next'
 import HeroSection from './components/HeroSection'
+import CredibilityBar from './components/CredibilityBar'
+import WhoWeHelpSection from './components/WhoWeHelpSection'
 import OurStorySection from './components/OurStorySection'
 import ServicesSection from './components/ServicesSection'
 import ProjectsSection from './components/ProjectsSection'
@@ -49,6 +51,8 @@ export default function Home() {
       
       <div className="min-h-screen">
         <HeroSection />
+        <CredibilityBar />
+        <WhoWeHelpSection />
         <OurStorySection />
         <ServicesSection />
         <ProjectsSection />

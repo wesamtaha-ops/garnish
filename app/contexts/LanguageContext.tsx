@@ -21,13 +21,33 @@ const translations = {
     'nav.contact': 'Contact',
     'nav.ourStory': 'Our Story',
     'nav.of': 'of',
+    'nav.whoWeHelp': 'Who We Help',
     
     // Hero Section
     'hero.title': 'GARNISH',
     'hero.tagline': 'Management • Operations • F&B Specialists',
+    'hero.headline': 'F&B consulting that turns concepts into profitable operations.',
+    'hero.subheadline': 'Since 2015, GARNISH has helped investors, restaurant owners, hospitality brands, and institutions launch, optimize, and strengthen food & beverage operations through concept development, systems design, operational improvement, and hands-on consulting.',
+    'hero.supportLine': 'From strategy to setup to performance improvement, we help you make better decisions faster and execute with fewer costly mistakes.',
     'hero.subtitle': 'Professional hospitality and F&B consulting services since 2015',
-    'hero.cta': 'Learn More',
-    'hero.contact': 'Contact Us',
+    'hero.cta': 'Book a Consultation',
+    'hero.contact': 'View Case Studies',
+    
+    // Credibility bar
+    'cred.barTitle': 'At a glance',
+    'cred.stat1': '10+ Years of Experience',
+    'cred.stat2': '18 Projects Delivered',
+    'cred.stat3': '8+ Sectors Served',
+    'cred.stat4': 'End-to-End F&B Expertise',
+    
+    // Who we help
+    'whoWeHelp.badge': 'Our focus',
+    'whoWeHelp.title': 'Who we help',
+    'whoWeHelp.subtitle': 'Clarity for every stakeholder in the room',
+    'whoWeHelp.item1': 'Investors launching new hospitality or F&B concepts',
+    'whoWeHelp.item2': 'Restaurants and cafés seeking operational improvement',
+    'whoWeHelp.item3': 'Institutions building foodservice operations for students, staff, or communities',
+    'whoWeHelp.item4': 'Growing brands that need better systems, team alignment, and scalable execution',
     
     // Our Story
     'story.title': 'Our Story',
@@ -270,13 +290,31 @@ const translations = {
     'nav.contact': 'اتصل بنا',
     'nav.ourStory': 'قصتنا',
     'nav.of': 'من',
+    'nav.whoWeHelp': 'من نخدم',
     
     // Hero Section
     'hero.title': 'GARNISH',
     'hero.tagline': 'إدارة • عمليات • متخصصون في الأغذية والمشروبات',
+    'hero.headline': 'استشارات في الأغذية والمشروبات تُحوّل المفاهيم إلى عمليات مربحة.',
+    'hero.subheadline': 'منذ عام 2015، دعمنا في GARNISH المستثمرين وأصحاب المطاعم وعلامات الضيافة والمؤسسات لإطلاق وتحسين وتعزيز عمليات الأغذية والمشروبات عبر تطوير المفاهيم، وتصميم الأنظمة، وتحسين التشغيل، والاستشارات الميدانية.',
+    'hero.supportLine': 'من الاستراتيجية إلى التجهيز وتحسين الأداء، نساعدك على اتخاذ قرارات أوضح بشكل أسرع وتنفيذها بأقل أخطاء مكلفة.',
     'hero.subtitle': 'خدمات استشارية مهنية في الضيافة والأغذية والمشروبات منذ 2015',
-    'hero.cta': 'اعرف المزيد',
-    'hero.contact': 'اتصل بنا',
+    'hero.cta': 'احجز استشارة',
+    'hero.contact': 'عرض دراسات الحالة',
+    
+    'cred.barTitle': 'في سطور',
+    'cred.stat1': 'أكثر من 10 سنوات خبرة',
+    'cred.stat2': '18 مشروعاً مُنفّذاً',
+    'cred.stat3': 'أكثر من 8 قطاعات',
+    'cred.stat4': 'خبرة شاملة في الأغذية والمشروبات',
+    
+    'whoWeHelp.badge': 'تركيزنا',
+    'whoWeHelp.title': 'من نخدم',
+    'whoWeHelp.subtitle': 'وضوح لكل فريق وقرار',
+    'whoWeHelp.item1': 'مستثمرون يطلقون مفاهيم جديدة في الضيافة والأغذية والمشروبات',
+    'whoWeHelp.item2': 'مطاعم ومقاهٍ تسعى لتحسين التشغيل',
+    'whoWeHelp.item3': 'مؤسسات تبني عمليات تغذية لطلابها أو موظفيها أو مجتمعاتها',
+    'whoWeHelp.item4': 'علامات نامية تحتاج أنظمة أوضح، وانساقاً فريقياً، وتنفيذاً قابلاً للتوسع',
     
     // Our Story
     'story.title': 'قصتنا',

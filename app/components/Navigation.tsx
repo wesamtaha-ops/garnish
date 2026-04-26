@@ -50,6 +50,7 @@ export default function Navigation() {
       type: 'dropdown',
       items: [
         { href: '#story', label: t('story.title') },
+        { href: '#who-we-help', label: t('nav.whoWeHelp') },
         { href: '#about', label: t('whoWeAre.title') },
         { href: '#values', label: t('values.title') }
       ]

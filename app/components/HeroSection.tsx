@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-import { ChevronDown, Play } from 'lucide-react'
+import { ChevronDown, BookOpen, MessageCircle } from 'lucide-react'
 import { useLanguage } from '../contexts/LanguageContext'
 
 export default function HeroSection() {
@@ -15,7 +15,10 @@ export default function HeroSection() {
   }, [])
 
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden scroll-mt-20">
+    <section
+      id="home"
+      className="relative flex min-h-[100dvh] flex-col overflow-x-hidden scroll-mt-20"
+    >
         {/* Background Image with Overlay */}
         <div className="absolute inset-0 z-0">
           <div className="relative w-full h-full">
@@ -27,7 +30,6 @@ export default function HeroSection() {
               priority
             />
           </div>
-          {/* Green overlay with specified color and opacity */}
           <div 
             className="absolute inset-0"
             style={{
@@ -37,78 +39,80 @@ export default function HeroSection() {
           />
         </div>
 
-              {/* Enhanced Decorative Background Pattern */}
-              <div className="absolute inset-0 z-10 overflow-hidden">
-                {/* Large Background Circles */}
-                <div className="absolute top-10 left-10 w-32 h-32 rounded-full blur-xl animate-pulse" style={{ backgroundColor: 'rgba(255, 255, 255, 0.08)' }} />
-                <div className="absolute bottom-20 right-20 w-40 h-40 rounded-full blur-2xl animate-pulse" style={{ backgroundColor: 'rgba(255, 255, 255, 0.06)', animationDelay: '1s' }} />
+              <div className="pointer-events-none absolute inset-0 z-10 overflow-hidden">
+                <div className="absolute left-6 top-8 h-24 w-24 rounded-full blur-xl animate-pulse sm:left-10 sm:top-10 sm:h-32 sm:w-32" style={{ backgroundColor: 'rgba(255, 255, 255, 0.08)' }} />
+                <div className="absolute bottom-16 right-6 h-28 w-28 rounded-full blur-2xl animate-pulse sm:bottom-20 sm:right-20 sm:h-40 sm:w-40" style={{ backgroundColor: 'rgba(255, 255, 255, 0.06)', animationDelay: '1s' }} />
                 <div className="absolute top-1/2 left-1/3 w-24 h-24 rounded-full blur-lg animate-pulse" style={{ backgroundColor: 'rgba(255, 255, 255, 0.10)', animationDelay: '2s' }} />
-                
-                {/* Medium Circles */}
                 <div className="absolute top-32 right-1/4 w-20 h-20 rounded-full blur-md animate-pulse" style={{ backgroundColor: 'rgba(255, 255, 255, 0.07)', animationDelay: '0.5s' }} />
                 <div className="absolute bottom-32 left-1/4 w-28 h-28 rounded-full blur-lg animate-pulse" style={{ backgroundColor: 'rgba(255, 255, 255, 0.05)', animationDelay: '1.5s' }} />
                 <div className="absolute top-20 right-10 w-16 h-16 rounded-full blur-sm animate-pulse" style={{ backgroundColor: 'rgba(255, 255, 255, 0.09)', animationDelay: '2.5s' }} />
-                
-                {/* Small Accent Circles */}
                 <div className="absolute top-40 left-1/2 w-12 h-12 rounded-full blur-sm" style={{ backgroundColor: 'rgba(255, 255, 255, 0.12)' }} />
                 <div className="absolute bottom-40 right-1/3 w-10 h-10 rounded-full blur-sm" style={{ backgroundColor: 'rgba(255, 255, 255, 0.10)' }} />
                 <div className="absolute top-60 left-20 w-8 h-8 rounded-full" style={{ backgroundColor: 'rgba(255, 255, 255, 0.15)' }} />
                 <div className="absolute bottom-60 right-16 w-6 h-6 rounded-full" style={{ backgroundColor: 'rgba(255, 255, 255, 0.13)' }} />
-                
-                {/* Floating Dots Pattern */}
                 <div className="absolute top-24 right-1/3 w-3 h-3 rounded-full animate-bounce" style={{ backgroundColor: 'rgba(255, 255, 255, 0.18)', animationDelay: '1s' }} />
                 <div className="absolute top-36 right-1/2 w-2 h-2 rounded-full animate-bounce" style={{ backgroundColor: 'rgba(255, 255, 255, 0.16)', animationDelay: '1.3s' }} />
                 <div className="absolute bottom-24 left-1/3 w-4 h-4 rounded-full animate-bounce" style={{ backgroundColor: 'rgba(255, 255, 255, 0.14)', animationDelay: '0.7s' }} />
                 <div className="absolute bottom-36 left-1/2 w-2 h-2 rounded-full animate-bounce" style={{ backgroundColor: 'rgba(255, 255, 255, 0.15)', animationDelay: '2.1s' }} />
-                
-                {/* Subtle Ring Elements */}
                 <div className="absolute top-1/4 right-1/5 w-16 h-16 border-2 rounded-full animate-spin" style={{ borderColor: 'rgba(255, 255, 255, 0.10)', animationDuration: '20s' }} />
                 <div className="absolute bottom-1/4 left-1/5 w-12 h-12 border rounded-full animate-spin" style={{ borderColor: 'rgba(255, 255, 255, 0.08)', animationDuration: '15s', animationDirection: 'reverse' }} />
               </div>
 
-      {/* Content */}
-      <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center h-full flex flex-col justify-center py-20">
-        <div className={`transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-           {/* Responsive Hero Logo - Larger */}
-           <div className="mb-6 md:mb-8">
-             <div className="relative w-80 h-40 sm:w-96 sm:h-48 md:w-[40rem] md:h-80 lg:w-[48rem] lg:h-96 mx-auto">
-               <Image
-                 src="/heroLogo.png"
-                 alt="GARNISH Hero Logo"
-                 fill
-                 className="object-contain drop-shadow-2xl"
-                 priority
-               />
-             </div>
-           </div>
+      <div className="relative z-20 flex min-h-[100dvh] flex-1 flex-col">
+        <div
+          className="mx-auto flex min-h-0 w-full max-w-5xl flex-1 flex-col justify-start pl-[max(1rem,env(safe-area-inset-left,0px))] pr-[max(1rem,env(safe-area-inset-right,0px))] pb-[max(0.75rem,env(safe-area-inset-bottom,0px))] pt-[calc(5rem+env(safe-area-inset-top,0px))] text-center sm:pl-6 sm:pr-6 sm:pb-4 sm:pt-20 md:pt-24 lg:pl-8 lg:pr-8"
+        >
+          <div
+            className={`flex min-h-0 flex-1 flex-col justify-start gap-0 motion-reduce:transition-none ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'} transition-all duration-1000 sm:min-h-0 sm:justify-center sm:py-1`}
+          >
+            <div className="-mt-0 mb-2 shrink-0 sm:mb-2 md:mb-3 lg:mb-4">
+              <div
+                className="relative mx-auto h-[min(9.5rem,32vw)] w-[min(22rem,calc(100vw-1.25rem))] max-w-full max-sm:max-h-[30vh] sm:h-40 sm:w-80 md:h-44 md:w-96 lg:h-40 lg:w-[20rem] xl:h-44 xl:w-[22rem] 2xl:h-48 2xl:w-96"
+              >
+                <Image
+                  src="/heroLogo.png"
+                  alt="GARNISH Hero Logo"
+                  fill
+                  sizes="(max-width: 640px) min(22rem, calc(100vw - 1.25rem)), (max-width: 1024px) 24rem, (max-width: 1536px) 22rem, 24rem"
+                  className="object-contain object-top drop-shadow-2xl"
+                  priority
+                />
+              </div>
+            </div>
 
-          {/* Responsive Subtitle - Larger */}
-          <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-neutral-200 max-w-3xl mx-auto mb-8 md:mb-10 leading-relaxed px-4">
-            {t('hero.subtitle')}
-          </p>
+            <h1 className="mb-2 max-w-[65ch] shrink-0 px-1 text-balance text-base font-bold leading-snug text-white sm:mb-2 sm:px-2 sm:text-lg md:mb-3 md:text-xl md:leading-tight lg:mb-4 lg:max-w-4xl lg:px-4 lg:text-2xl lg:leading-tight xl:text-3xl">
+            {t('hero.headline')}
+            </h1>
 
-          {/* Responsive CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 md:gap-5 justify-center items-center mb-6 md:mb-10 px-4">
-            <Link
-              href="#story"
-              className={`group bg-gradient-to-r from-primary-500 to-primary-600 text-white px-6 py-3 sm:px-8 sm:py-4 rounded-full text-base sm:text-lg shadow-2xl hover:shadow-primary-500/25 transition-all duration-300 transform hover:scale-105 flex items-center ${isRTL ? 'space-x-reverse space-x-2' : 'space-x-2'} w-full sm:w-auto justify-center`}
+            <p className="mb-1.5 max-w-prose shrink-0 px-1 text-sm leading-relaxed text-neutral-200 sm:mb-2 sm:px-2 sm:text-base md:mb-2 md:max-w-3xl md:px-4 md:leading-relaxed lg:mx-auto lg:text-lg">
+            {t('hero.subheadline')}
+            </p>
+
+            <p className="mb-3 max-w-prose shrink-0 px-1 text-xs leading-relaxed text-neutral-300 sm:mb-4 sm:text-sm md:mb-5 md:max-w-2xl md:px-4 md:text-base lg:mx-auto">
+            {t('hero.supportLine')}
+            </p>
+
+            <div
+              className={`mt-auto flex shrink-0 flex-col items-stretch justify-center gap-3 px-1 pt-1 sm:mt-0 sm:flex-row sm:items-center sm:gap-3 sm:px-4 lg:mt-0 lg:gap-4 lg:pt-2 ${isRTL ? 'sm:flex-row-reverse' : ''}`}
             >
-              <span>{t('hero.cta')}</span>
-              <ChevronDown className="w-4 h-4 sm:w-5 sm:h-5 group-hover:translate-y-1 transition-transform duration-300" />
+            <Link
+              href="#contact"
+              className={`group flex min-h-[3rem] w-full min-w-0 items-center justify-center gap-2 rounded-full bg-gradient-to-r from-primary-500 to-primary-600 px-4 py-3 text-sm text-white shadow-2xl transition duration-300 [touch-action:manipulation] active:scale-[0.99] hover:shadow-primary-500/25 sm:w-auto sm:min-h-0 sm:px-6 sm:py-2.5 sm:text-sm sm:hover:scale-[1.02] md:text-base lg:px-8 lg:py-3 ${isRTL ? 'flex-row-reverse' : 'flex-row'}`}
+            >
+              <MessageCircle className="h-5 w-5 shrink-0 sm:h-5 sm:w-5" />
+              <span className="text-center font-medium">{t('hero.cta')}</span>
+              <ChevronDown className="h-4 w-4 shrink-0 transition-transform group-hover:translate-y-0.5 sm:h-4 sm:w-4" />
             </Link>
             
             <Link
-              href="#contact"
-              className={`group bg-white/10 backdrop-blur-md text-white px-6 py-3 sm:px-8 sm:py-4 rounded-full text-base sm:text-lg border-2 border-white/20 hover:bg-white hover:text-neutral-900 transition-all duration-300 transform hover:scale-105 flex items-center ${isRTL ? 'space-x-reverse space-x-2' : 'space-x-2'} w-full sm:w-auto justify-center`}
+              href="#projects"
+              className={`group flex min-h-[3rem] w-full min-w-0 items-center justify-center gap-2 rounded-full border-2 border-white/20 bg-white/10 px-4 py-3 text-sm text-white backdrop-blur-md transition duration-300 [touch-action:manipulation] active:scale-[0.99] hover:border-white/30 hover:bg-white/15 sm:w-auto sm:min-h-0 sm:px-6 sm:py-2.5 sm:text-sm sm:hover:scale-[1.02] sm:hover:bg-white sm:hover:text-neutral-900 md:text-base lg:px-8 lg:py-3 ${isRTL ? 'flex-row-reverse' : 'flex-row'}`}
             >
-              <span>{t('hero.contact')}</span>
-              <div className="w-7 h-7 sm:w-8 sm:h-8 bg-white/20 rounded-full flex items-center justify-center group-hover:bg-primary-500 transition-colors duration-300">
-                <Play className={`w-3 h-3 sm:w-4 sm:h-4 ${isRTL ? 'mr-0.5 scale-x-[-1]' : 'ml-0.5'}`} />
-              </div>
+              <BookOpen className="h-5 w-5 shrink-0" />
+              <span className="text-center font-medium">{t('hero.contact')}</span>
             </Link>
+            </div>
           </div>
-
-         
         </div>
       </div>
 
